@@ -200,35 +200,4 @@ document.addEventListener('DOMContentLoaded', () =>{
         }, 300); // Adjust scroll interval as needed
     }
 
-    function showStudentForm() {
-        document.getElementById("student-form").style.display = "block";
-        document.getElementById("admin-form").style.display = "none";
-        var studentButtons = document.getElementsByClassName("student-button");
-        for (var i = 0; i < studentButtons.length; i++) {
-            studentButtons[i].style.backgroundColor = "rgb(79, 165, 79)";
-            studentButtons[i].style.color = "white";
-        }
-        var adminButtons = document.getElementsByClassName("admin-button");
-        for (var i = 0; i < adminButtons.length; i++) {
-            adminButtons[i].style.backgroundColor = "white";
-            adminButtons[i].style.color = "black";
-        
-        }
-    }
-
-    function showAdminForm() {
-        document.getElementById("admin-form").style.display = "block";
-        document.getElementById("student-form").style.display = "none";
-        var adminButtons = document.getElementsByClassName("admin-button");
-        for (var i = 0; i < adminButtons.length; i++) {
-            adminButtons[i].style.backgroundColor = "rgb(79, 165, 79)";
-            adminButtons[i].style.color = "white";
-        }
-        var studentButtons = document.getElementsByClassName("student-button");
-        for (var i = 0; i < studentButtons.length; i++) {
-            studentButtons[i].style.backgroundColor = "white";
-            studentButtons[i].style.color = "black";
-        }
-    }
-
 });
